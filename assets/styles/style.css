@@ -67,7 +67,7 @@ header{
 }
 
 .menu .bar {
-  display: block; /*Colocando elas numa posição fixa*/
+  display: block; /*Colocando elas em uma posição fixa*/
   width: 28px; /*Largura*/
   height: 3px; /*Altura*/
   border-radius: 3px; /*Arredondar as bordas*/
