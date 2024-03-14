@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/*Importando a fonte do site*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
 
+/*Definindo todos os elementos como margin 0*/
 *{
   margin: 0;
   padding:  0;
@@ -8,6 +10,7 @@
   list-style: none;
   text-decoration: none;
 }
+/*Criando as cores do site*/
 :root{
   --light:#FFF;
   --dark:#000;
@@ -178,27 +181,79 @@ header{
 
 .container-values{
     height: 50vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
 }
 
 .content-values{
-  width: 600px;
-  height: 30px;
-  padding: 30px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  width: 80%;
 }
-.content-values h2{
+.container-values h2{
+  width: 100%;
+  color: var(--green);
+  font-size: 3rem;
+}
+.especialidades{
   width: 100%;
   height: 100%;
-  color: var(--dark);
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.especi-item h3{
+  font-size: 1.3rem;
+  padding-bottom: 20px;
+}
+.especi-item h4{
+  font-size: .7rem;
+}
+.especi-item{
+  width: 300px;
+}
+/*-----Container INFORMATION-----*/
+.container-information{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(128, 128, 128, 0.423);
+  display: flex;
+  justify-content: center;
+}
+.content-informations{
+  width: 90%;
+  height: 100%;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-information h2{
+  color: var(--green);
   font-size: 3rem;
 }
 
-.container-information{
-  display: none;
+.info-area{
+  width: 60%;
+  height: 80%;
+  background-color: #411f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
+.information{
+  width: 200px;
+  height: 200px;
+  background-color: cadetblue;
+}
+
+/*-----------------------*/
 .container-local{
   display: none;
 }
