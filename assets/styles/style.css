@@ -51,12 +51,9 @@ header{
 /*Main*/
 
 .home{
-  justify-content: center;
-  align-items: center;
   height: 100%;
+  flex-direction: column;
 }
-
-
 /*Container que conterá título e imagem*/
 .container-about{
   height: 50vh;
@@ -66,7 +63,11 @@ header{
 /*Conteúdo da direita*/
 .content-about{
   width: 50%;
+  height: 100%;
   background-color: var(--red);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 /*Imagem da esquerda*/
 .img-about{
