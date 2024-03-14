@@ -130,6 +130,21 @@ header{
 .container-values{
     height: 50vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content-values{
+  width: 600px;
+  height: 30px;
+  padding: 30px;
+}
+.content-values h2{
+  width: 100%;
+  height: 100%;
+  color: var(--dark);
+  text-align: center;
+  font-size: 3rem;
 }
 
 .container-information{
