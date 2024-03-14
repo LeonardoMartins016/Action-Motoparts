@@ -86,34 +86,8 @@ header{
 }
 
 /*Carrossel*/
-#carousel-container {
-  width: 300px;
-  overflow: hidden;
-  position: relative;
-  margin: 0 auto;
-}
 
-#carousel {
-  display: flex;
-  transition: transform 0.5s ease;
-}
 
-.carousel-item {
-  width: 300px;
-  flex-shrink: 0;
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-
-/*Container ABOUT*/
-.container-about{
-  height: 50vh;
-  width: 100%;
-  padding-top: 30px;
-}
 
 /*Conteúdo da ESQUERDA*/
 .content-about{
