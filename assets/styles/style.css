@@ -62,6 +62,19 @@ header{
   cursor: pointer;
 }
 
+.menu{
+  display: none;
+}
+
+.menu .bar {
+  display: block; /*Colocando elas numa posição fixa*/
+  width: 28px; /*Largura*/
+  height: 3px; /*Altura*/
+  border-radius: 3px; /*Arredondar as bordas*/
+  background-color: var(--dark); /*Cor do fundo vermelha*/
+  margin: 5px auto; /*Espaço entre as barras verticalmente*/
+  transition: all 0.3s; /*Fazendo com que as mudanças sejam suaves*/
+}
 /*Main*/
 
 .home{
@@ -69,6 +82,7 @@ header{
   height: 100%;
   flex-direction: column;
   position: relative;
+  width: 100%;
 }
 
 /*Carrossel*/
@@ -102,6 +116,7 @@ header{
   color: var(--dark);
   font-size: 2.5rem;
   max-width: 300px;
+  min-width: 200px;
   line-height: 2rem;
   & span{
     color: var(--green);
@@ -122,7 +137,7 @@ header{
 
 .content-img{
   width: 400px;
-  height: 300px;
+  height: 400px;
   border-radius: 10px;
 }
 
@@ -133,8 +148,12 @@ header{
     width: 100%;
 }
 
+.container-information{
+  display: none;
+}
 
-.Content-values{
+.container-local{
+  display: none;
 }
 
 /*RESPONSIVO*/
@@ -144,7 +163,7 @@ header{
     display: none;
   }
   .content-about h2{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
   .content-about h2{
     margin-left: 1rem;
@@ -152,5 +171,17 @@ header{
   .content-about p{
     margin-left: 1rem;
   }
-
+  .container-about{
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu{
+    display: block;
+  }
+  .nav{
+    justify-content: space-between;
+    transition: .5s;
+    padding: 10px 40px;
+  }
 }
