@@ -44,6 +44,7 @@ header{
 .nav-item a{
   color: var(--dark);
   font-size: 1.3rem;
+  /*Hover*/
   &:hover{
     color: var(--light);
     transition: .5s;
@@ -69,23 +70,23 @@ header{
 .content-about{
   width: 50%;
   height: 100%;
-  background-color: var(--red);
   justify-content: center;
   flex-direction: column;
 }
-.content-h2{
-  color: white;
+.content-about h2{
+  color: var(--dark);
   font-size: 2.5rem;
   padding-bottom: 30px;
   margin-left: 5rem;
 }
 .content-about p{
-  color: white;
+  color: var(--dark);
   margin-left: 5rem;
   max-width: 500px;
 }
 /*Imagem da DIREITA*/
 .img-about{
   width: 50%;
-  background-color: var(--blue);
+  background-image: url(../img/tipos-de-empresas-2.jpg);
+  background-size: cover;
 }
