@@ -1,5 +1,6 @@
-var navLinks = document.querySelectorAll('.nav-links');
+var navLinks = document.querySelector('.nav-links');
+var menu = document.querySelector(".menu");
 
-function ativo(){
-  navLinks.classList.toggle('ativo');
-}
+menu.addEventListener('click', () =>{
+  navLinks.classList.toggle('ativo')
+})
