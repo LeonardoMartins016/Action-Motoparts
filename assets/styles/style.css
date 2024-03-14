@@ -76,7 +76,9 @@ header{
   background-color: darkgrey;
   justify-content: center;
   align-items: center;
-  background-image: url(../img/);
+  background-image: url(../img/components.png);
+  background-size: cover;
+  background-position: center;
 }
 
 /*Container ABOUT*/
@@ -115,6 +117,12 @@ header{
   align-items: center;
 }
 
+.content-img{
+  width: 200px;
+  height: 200px;
+}
+
+
 /*Container VALUES*/
 
 .container-values{
@@ -122,10 +130,6 @@ header{
     width: 100%;
     background-color: blue;
 }
-
-
-
-
 
 /*RESPONSIVO*/
 
