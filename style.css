@@ -9,10 +9,11 @@
   text-decoration: none;
 }
 :root{
-  --light:;
-  --dark:;
-  --green:;
-  --light:;
+  --light:#FFF;
+  --dark:#000;
+  --green:green;
+  --red:red;
+  --blue:blue;
 }
 
 body{
@@ -20,22 +21,57 @@ body{
   height: 100%;
   font-family: "Poppins", sans-serif;
 }
-
+/*----Classe Flexbox----*/ 
 .flexbox{
   display: flex;
 }
-
+/*Header*/
 header{
   width: 100vw;
   justify-content: center; 
   align-items: center;
 }
+/*Navigation*/
 .nav{
   align-items: center;
   justify-content: space-around;
-  background-color: rgb(192, 192, 192);
+  background-color: rgb(219, 219, 219);
   padding: 18px 40px;
 }
 .nav-links{
   gap: 50px;
+}
+.nav-item a{
+  color: var(--dark);
+  &:hover{
+    color: var(--light);
+    transition: .5s;
+  }
+}
+/*Main*/
+
+.home{
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+/*Container que conterá título e imagem*/
+.container-about{
+  width: 100%;
+  background-color: var(--blue);
+  justify-content:center ;
+
+}
+
+/*Conteúdo da direita*/
+.content-about{
+  width: 50%;
+  background-color: var(--red);
+}
+/*Imagem da esquerda*/
+.img-about{
+  width: 50%;
 }
