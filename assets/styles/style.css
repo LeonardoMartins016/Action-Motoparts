@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  margin: 0;
+  padding:  0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+:root{
+  --light:#FFF;
+  --dark:#000;
+  --green:green;
+  --red:red;
+  --blue:blue;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+/*----Classe Flexbox----*/ 
+.flexbox{
+  display: flex;
+}
+/*Header*/
+header{
+  width: 100%;
+  justify-content: center; 
+  align-items: center;
+}
+/*Navigation*/
+.nav{
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 40px;
+}
+.nav-links{
+  gap: 50px;
+}
+.nav-item a{
+  color: var(--dark);
+  font-size: 1.3rem;
+  &:hover{
+    color: var(--light);
+    transition: .5s;
+  }
+}
+#action-logo{
+  width: 100px;
+  height:80px;
+}
+/*Main*/
+
+.home{
+  height: 100%;
+  flex-direction: column;
+}
+/*Container que conterá título e imagem*/
+.container-about{
+  height: 50vh;
+  width: 100%;
+}
+
+/*Conteúdo da ESQUERDA*/
+.content-about{
+  width: 50%;
+  height: 100%;
+  background-color: var(--red);
+  justify-content: center;
+  flex-direction: column;
+}
+.content-h2{
+  color: white;
+  font-size: 2.5rem;
+  padding-bottom: 30px;
+  margin-left: 5rem;
+}
+.content-about p{
+  color: white;
+  margin-left: 5rem;
+  max-width: 500px;
+}
+/*Imagem da DIREITA*/
+.img-about{
+  width: 50%;
+  background-color: var(--blue);
+}
