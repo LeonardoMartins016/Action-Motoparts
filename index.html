@@ -36,8 +36,43 @@
       </nav>
     </header>
     <main class="home flexbox">
-      <section class="carrossel flexbox">
-        <div></div>
+      <section class="slider">
+          <div class="slides">
+
+            <!--Radio Buttons-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <!--imagens slide-->
+
+            <div class="slide first">
+              <img src="/assets/img/components.png" alt="projetos Action">
+            </div>
+            <div class="slide">
+              <img src="/assets/img/lojafoto.png" alt="projetos Action">
+            </div>
+            <div class="slide">
+              <img src="/assets/img/tipos-de-empresas-2.jpg" alt="projetos Action">
+            </div>
+
+            <!--Navegation auto-->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+
+          </div>
+
+          <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
       </section>
       <section class="container-about flexbox">
         <div class="content-about flexbox">
