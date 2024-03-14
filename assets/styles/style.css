@@ -34,19 +34,24 @@ header{
 /*Navigation*/
 .nav{
   align-items: center;
-  justify-content: space-around;
-  background-color: rgb(219, 219, 219);
-  padding: 18px 40px;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 40px;
 }
 .nav-links{
   gap: 50px;
 }
 .nav-item a{
   color: var(--dark);
+  font-size: 1.3rem;
   &:hover{
     color: var(--light);
     transition: .5s;
   }
+}
+#action-logo{
+  width: 100px;
+  height:80px;
 }
 /*Main*/
 
@@ -60,16 +65,26 @@ header{
   width: 100%;
 }
 
-/*Conteúdo da direita*/
+/*Conteúdo da ESQUERDA*/
 .content-about{
   width: 50%;
   height: 100%;
   background-color: var(--red);
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
-/*Imagem da esquerda*/
+.content-h2{
+  color: white;
+  font-size: 2.5rem;
+  padding-bottom: 30px;
+  margin-left: 5rem;
+}
+.content-about p{
+  color: white;
+  margin-left: 5rem;
+  max-width: 500px;
+}
+/*Imagem da DIREITA*/
 .img-about{
   width: 50%;
   background-color: var(--blue);
