@@ -59,11 +59,13 @@ header{
 #action-logo{
   width: 90px;
   height:80px;
+  cursor: pointer;
 }
+
 /*Main*/
 
 .home{
-  top: 160px;
+  top: 140px;
   height: 100%;
   flex-direction: column;
   position: relative;
@@ -79,6 +81,7 @@ header{
   background-image: url(../img/components.png);
   background-size: cover;
   background-position: center;
+  filter: saturate(0%) brightness(60%);
 }
 
 /*Container ABOUT*/
@@ -118,17 +121,20 @@ header{
 }
 
 .content-img{
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
 }
-
 
 /*Container VALUES*/
 
 .container-values{
     height: 50vh;
     width: 100%;
-    background-color: blue;
+}
+
+
+.Content-values{
 }
 
 /*RESPONSIVO*/
