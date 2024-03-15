@@ -89,32 +89,37 @@ header{
 .home{
   width: 100%;
   height: 100%;
-  top: 140px;
+  top: 200px;
   flex-direction: column;
   position: relative;
 }
 
 
 
-/* .carrossel{
+.carrossel{
   width: 100%;
   height: 50vh;
   background-color: #787878;
-  background-image: url(../img/lojafoto.png);
-  background-size: cover;
-  background-position: center;
-} */
-
-
-.carrossel-img{
-  box-shadow: 0 1px 2px #0003;
-  width: 100%;
-  width: 100vw;
-}
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
 .swiper{
   width: 100%;
-  height: 50vh;
+  height: 70vh;
+  margin-bottom: 3rem;
+}
+.swiper-slide{
+  background-size: cover;
+}
+
+.swiper-slide img{
+  width: 100%;
+  transition: transform 0.5s ease;
+  filter: brightness(50%);
+}
+.swiper-pagination{
+  scale: 1.5;
 }
 /*Conteúdo da ESQUERDA*/
 .content-about{
