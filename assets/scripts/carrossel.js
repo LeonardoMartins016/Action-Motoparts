@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 var swiper = new Swiper(".mySwiper", {
   speed: 1000,
   effect: 'slide',

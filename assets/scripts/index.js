@@ -5,4 +5,5 @@ var body = document.querySelector('body');
 menu.addEventListener('click', () =>{
   navLinks.classList.toggle('ativo');
   body.classList.toggle('lock');
+  menu.classList.toggle('ativo');
 })

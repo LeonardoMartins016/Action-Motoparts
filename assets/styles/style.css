@@ -86,6 +86,7 @@ header{
 
 .menu{
   display: none;
+  cursor: pointer;
 }
 
 .menu .bar {
@@ -123,13 +124,18 @@ header{
   height: 70vh;
 }
 .swiper-slide{
+  display: flex;
   background-size: cover;
+  height: 100%;
 }
 
+#foto2{
+}
 .swiper-slide img{
   width: 100%;
   transition: transform .5s ease;
-  filter: brightness(50%);
+  filter: brightness(100%);
+  background-position: center;
 }
 .swiper-pagination{
   scale: 2;
@@ -486,6 +492,15 @@ footer{
   .menu{
     display: block;
   }
+  .menu.ativo .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .menu.ativo .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .menu.ativo .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
   .nav{
     justify-content: space-between;
     padding: 10px 40px;
@@ -605,8 +620,6 @@ footer{
   }
   .logo{
     width: 100%;
-
-
   }
   .redes{
     display: flex;
@@ -626,5 +639,27 @@ footer{
 
 }
 
+@media screen and (max-width: 300px){
+  .information{
+    scale: 0.4;
+    padding: 0;
+    margin: 0;
+  }
+  .content-informations h2{
+    font-size: 1.5rem;
+  }
+  .content-local h3{
+    font-size: 1.5rem;
+  }
+  .local-right h2{
+    font-size: 1.5rem;
+  }
+  .info-area{
+    height: auto;
+  }
+  .content-img{
+    display: none;
+  }
+}
 /*página de produtos*/
 
