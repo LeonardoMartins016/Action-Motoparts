@@ -32,6 +32,18 @@ body.lock{
 .flexbox{
   display: flex;
 }
+.whatsapp-btn{
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 999;
+  background-image: url(../img/zap.png);
+  background-size: cover;
+  border-radius: 50%;
+  background-color: white;
+}
 /*Header*/
 header{
   width: 100%;
@@ -58,10 +70,11 @@ header{
   color: var(--dark);
   font-size: 1.3rem;
   display: block;
+  font-weight: 600;
 
   /*Hover*/
   &:hover{
-    color: var(--light);
+    color: var(--green);
     transition: .5s;
   }
 }
@@ -107,7 +120,6 @@ header{
 .swiper{
   width: 100%;
   height: 70vh;
-  margin-bottom: 3rem;
 }
 .swiper-slide{
   background-size: cover;
@@ -119,12 +131,15 @@ header{
   filter: brightness(50%);
 }
 .swiper-pagination{
-  scale: 1.5;
+  scale: 2;
+}
+.swiper-pagination-bullet {
+  background-color: #ff0000; /* Cor desejada */
 }
 /*Conteúdo da ESQUERDA*/
 .content-about{
   width: 50%;
-  height: 50vh;
+  height: 70vh;
   flex-direction: column;
   padding: 0px 10%;
   justify-content: center;
@@ -288,6 +303,7 @@ header{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
+  scale: 0.8;
 }
 
 .local-left form input{
@@ -358,6 +374,7 @@ footer{
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 30px;
 }
 .logo{
   display: flex;
@@ -382,7 +399,7 @@ footer{
 }
 .contacts a{
   color: white;
-  font-weight: 700;
+  font-weight: 500;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -401,7 +418,7 @@ footer{
 .ins-item{
   list-style: disc;
   color: white;
-  font-weight: 700;
+  font-weight: 500;
 }
 /*RESPONSIVO*/
 @media screen and (max-width:1270px){
@@ -517,16 +534,31 @@ footer{
     width: 100%;
     justify-content: center;
   }
+  .carrossel{
+    height: 20vh;
+  }
 }
 
 /*CELULAR*/
 @media screen and (max-width: 450px){
+  .home{
+    top: 170px;
+  }
   .img-about{
     scale: 0.8;
     transition: .5s;
   }
   .container-about{
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
+  }
+  .content-about{
+    margin-top: 3rem;
+  }
+  .swiper-pagination{
+    scale: 1.3;
+  }
+  .swiper-button-next, .swiper-button-prev{
+    scale: 0.5 ;
   }
   .information{
     scale: 0.8;
@@ -549,4 +581,34 @@ footer{
   .content-footer{
     flex-direction: column;
   }
+  .swiper{
+    height: 30vh;
+  }
+  .info-contatos{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+  .contacts h3{
+    margin: 20px 0px;
+  }
+  .logo{
+    width: 100%;
+
+
+  }
+  .redes{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    margin: 0px 12px;
+  }
+  .redes a{
+    scale: 1.2;
+  }
+  #footer-logo{
+    margin-bottom: 2rem;
+  }
+
 }
