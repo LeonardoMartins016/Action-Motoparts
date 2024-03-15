@@ -10,6 +10,11 @@
   list-style: none;
   text-decoration: none;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+
 /*Criando as cores do site*/
 :root{
   --light:#FFF;
@@ -217,8 +222,6 @@ header{
   width: 50px;
   margin-bottom: 1.5rem;
 }
-
-
 
 /*QUARTA SEÇÃO - AVALIAÇÕES*/
 .container-information{
@@ -446,6 +449,9 @@ footer{
   .container-values{
     height: auto;
   }
+  .image-product:hover{
+    transform: scale(1.1);
+  }
 }
 @media screen and (max-width: 860px){
   /*Carrossel*/
@@ -562,12 +568,15 @@ footer{
   .carrossel{
     height: 20vh;
   }
+}
+
+@media screen and (max-width:750px){
+
   .line1, .line2{  
     flex-direction: column;
+    transition: all 1s;
   }
-  .product{
-    border: solid 1px #000;
-  }
+
 }
 
 /*CELULAR*/
@@ -575,6 +584,7 @@ footer{
   .home{
     top: 170px;
   }
+
   .img-about{
     scale: 0.8;
     transition: .5s;
@@ -715,4 +725,8 @@ footer{
   justify-content: center;
   width: 100%;
   text-align: center;
+}
+
+.image-product:hover{
+  transform: scale(1.1);
 }
