@@ -108,6 +108,7 @@ header{
 }
 
 
+/*CARROSSEL*/
 
 .carrossel{
   width: 100%;
@@ -133,8 +134,11 @@ header{
 .swiper-pagination{
   scale: 2;
 }
-.swiper-pagination-bullet {
-  background-color: #ff0000; /* Cor desejada */
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--light-green); /* Cor de fundo azul */
+}
+.swiper-button-next, .swiper-button-prev{
+  color: #00A32E;
 }
 /*Conteúdo da ESQUERDA*/
 .content-about{
@@ -340,6 +344,11 @@ label[for="mensagem"]{
   text-transform: uppercase;
   font-weight: bold;
   margin-top: 10px;
+  cursor: pointer;
+  &:hover{
+    background-color: var(--light-green);  
+    transition: .4s; 
+  }
 }
 
 /*CONTAINER RIGHT*/

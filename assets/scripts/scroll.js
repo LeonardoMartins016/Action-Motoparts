@@ -1,3 +1,4 @@
+
 ScrollReveal().reveal('.scroll', {  
 origin: 'bottom', // Animar de baixo para cima
 distance: '20px', // Distância de deslocamento
