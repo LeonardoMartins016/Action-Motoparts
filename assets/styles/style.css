@@ -445,13 +445,8 @@ footer{
   .container-values{
     height: auto;
   }
-<<<<<<< HEAD
-  .image-product:hover{
-    transform: scale(1.1);
-=======
   .container-information{
     height: auto;
->>>>>>> e31b7e71e7bbbc328734b13f819904c88f50d1ba
   }
 }
 @media screen and (max-width: 860px){
@@ -573,16 +568,6 @@ footer{
     width: 100%;
     justify-content: center;
   }
-<<<<<<< HEAD
-  .carrossel{
-    height: 20vh;
-  }
-}
-
-@media screen and (max-width:750px){
-
-=======
->>>>>>> e31b7e71e7bbbc328734b13f819904c88f50d1ba
   .line1, .line2{  
     flex-direction: column;
     transition: all 1s;
@@ -698,7 +683,7 @@ footer{
 
 .home-products{
   position: relative;
-  top: 8rem;
+  top: 11rem;
 }
 .content-footer2{
   width: 100%;
@@ -745,4 +730,16 @@ footer{
 
 .image-product:hover{
   transform: scale(1.1);
+}
+
+.title-products{
+  color: var(--light-green);
+
+}
+
+.titulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
 }
