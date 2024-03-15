@@ -127,7 +127,7 @@ header{
 
 .swiper-slide img{
   width: 100%;
-  transition: transform 0.5s ease;
+  transition: transform .5s ease;
   filter: brightness(50%);
 }
 .swiper-pagination{
@@ -612,3 +612,6 @@ footer{
   }
 
 }
+
+/*página de produtos*/
+
