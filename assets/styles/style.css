@@ -114,7 +114,6 @@ header{
 .carrossel{
   width: 100%;
   height: 50vh;
-  background-color: #787878;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,17 +124,14 @@ header{
 }
 .swiper-slide{
   display: flex;
-  background-size: cover;
-  height: 100%;
-}
-
-#foto2{
+  height: 50vh;
+  width: 100%;
 }
 .swiper-slide img{
   width: 100%;
+  height: 100%;
   transition: transform .5s ease;
   filter: brightness(100%);
-  background-position: center;
 }
 .swiper-pagination{
   scale: 2;
@@ -461,6 +457,10 @@ footer{
   .swiper{
     height: 40vh;
   }
+  .swiper-slide img{
+    width: 100%;
+    height: 100%;
+  }
   .nav-links{
     right: -100%;
     top: 100px;
@@ -562,6 +562,12 @@ footer{
   .carrossel{
     height: 20vh;
   }
+  .line1, .line2{  
+    flex-direction: column;
+  }
+  .product{
+    border: solid 1px #000;
+  }
 }
 
 /*CELULAR*/
@@ -651,6 +657,7 @@ footer{
   .content-local h3{
     font-size: 1.5rem;
   }
+
   .local-right h2{
     font-size: 1.5rem;
   }
