@@ -137,9 +137,6 @@ header{
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: var(--light-green); /* Cor de fundo azul */
 }
-.swiper-button-next, .swiper-button-prev{
-  color: #00A32E;
-}
 /*Conteúdo da ESQUERDA*/
 .content-about{
   width: 50%;
@@ -451,9 +448,12 @@ footer{
 @media screen and (max-width: 860px){
   /*Carrossel*/
   .carrossel{
-    height: 30vh;
+    height: 40vh;
     transition: .5s;
     margin-bottom: 3rem;
+  }
+  .swiper{
+    height: 40vh;
   }
   .nav-links{
     right: -100%;
@@ -471,6 +471,7 @@ footer{
   }
   .content-about h2{
     font-size: 2rem;
+    margin-top: 3rem;
   }
   .content-about {
     width: 100%;
@@ -557,6 +558,7 @@ footer{
     scale: 0.8;
     transition: .5s;
   }
+
   .container-about{
     margin-bottom: 0rem;
   }
@@ -615,9 +617,11 @@ footer{
   }
   .redes a{
     scale: 1.2;
+    display: none;
   }
   #footer-logo{
     margin-bottom: 2rem;
+    display: none;
   }
 
 }
