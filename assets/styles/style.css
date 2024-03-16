@@ -695,7 +695,7 @@ footer{
 
 .home-products{
   position: relative;
-  top: 11rem;
+  top: 7rem;
 }
 .content-footer2{
   width: 100%;
@@ -703,9 +703,9 @@ footer{
   align-items: center;
   justify-content: space-around;
   padding: 30px;
-  position:relative;
-  top: 15rem;
+  position: relative;
   background-color: #333333;
+  margin-top: 8rem;
 }
 
 .descricao-product{
@@ -716,6 +716,11 @@ footer{
   width: 15rem;
   height: 15rem;
   text-align: center;
+  cursor: pointer;
+}
+
+#frente{
+  filter: brightness(0.8); /* Valor entre 0 e 1, quanto menor, mais escuro */
 }
 
 .content-products{  
