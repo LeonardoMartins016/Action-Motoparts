@@ -231,6 +231,10 @@ a.produtos{
   margin-bottom: 1.5rem;
 }
 
+.especi-item h3:hover{
+  color: #00A32E;
+}
+
 /*QUARTA SEÇÃO - AVALIAÇÕES*/
 .container-information{
   width: 100%;
