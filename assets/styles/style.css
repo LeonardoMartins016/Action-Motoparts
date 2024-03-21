@@ -589,7 +589,6 @@ footer{
 
 /*CELULAR*/
 @media screen and (max-width: 450px){
-  /*CELULAR*/
   .swiper{
     width: 100%;
     height: 30vh;
